@@ -1,0 +1,42 @@
+(a)
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 770 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/ea15d/Assignment1.git
+   fbdbe93..296ecd3  master -> master
+
+(b) 9 commits have been done. I used 'git log' to find this.
+
+(c) It was last modified on Wednesday, September 27, 16:31:42 2017.
+    I used 'git log --follow .gitignore'.
+
+(d) 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+    cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+    
+(e) A development branch can contain unstable
+    code without putting the master branch at risk.
+
+    One can work on seperate features using a branch
+    and later merge final product.
+
+(f) 'git log' shows the commit logs.
+    'git status' shows the working tree status.
+
+(g) git log --follow Weapon.h
+
+(h) git log --grep="file"
+
+(i)
+    (I) Inheritance is a technique that relies on an "is a" relationship.
+        With this relationship, derived classes can inherit data and functionality
+        from their base class.
+
+    (II) Polymorphism is used with inheritance to allow specification when it comes
+         to calling on a function that is included in a parent and child class.
+
+    (III) Encapsulation refers to the scope of every function/data has
+          within the program. Functions/data members can only be used inside its
+          respected encapsulation.
