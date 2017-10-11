@@ -17,7 +17,7 @@ class CrazyRandomSword : public Weapon
 {
  public:
 
- CrazyRandomSword() : Weapon("Crazy random sword", 0 ) {}
+ CrazyRandomSword() : Weapon("Crazy random sword", (rand()%90)+10 ) {}
   virtual ~CrazyRandomSword() 
     {};
   virtual double hit(double armor);

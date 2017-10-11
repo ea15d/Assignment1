@@ -6,5 +6,13 @@
 
 double CrazyRandomSword::hit(double armor)
 {
-  return 0;  
+  int damage;
+  int newarmor = armor/2;
+  newarmor = rand() % newarmor;
+  damage = hitPoints - newarmor;
+
+  if (damage < 0)
+    return 0;
+
+  return damage;
 }
