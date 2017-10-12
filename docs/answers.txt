@@ -1,3 +1,4 @@
+5.
 (a)
 Counting objects: 7, done.
 Delta compression using up to 4 threads.
@@ -40,3 +41,9 @@ To https://github.com/ea15d/Assignment1.git
     (III) Encapsulation refers to the scope of every function/data has
           within the program. Functions/data members can only be used inside its
           respected encapsulation.
+
+7.
+	The program is using both polymorphism and encapsulation. It uses
+	polymorphism when calling the hit function through the child classes.
+	It uses encapsulation when accessing certain data/functions through
+	different files.
