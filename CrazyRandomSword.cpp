@@ -3,12 +3,16 @@
  */
 
 #include "CrazyRandomSword.h"
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
 
 double CrazyRandomSword::hit(double armor)
 {
+  srand(time(NULL));
   int damage;
   int newarmor = armor/2;
-  newarmor = rand() % newarmor;
+  newarmor = rand()%newarmor;
   damage = hitPoints - newarmor;
 
   if (damage < 0)
