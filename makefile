@@ -8,7 +8,8 @@ OBJS=		\
 		$(BUILD_DIR)/CommonSword.o \
 		$(BUILD_DIR)/CommonSpear.o \
 		$(BUILD_DIR)/SimpleAxe.o \
-		$(BUILD_DIR)/CrazyRandomSword.o 
+		$(BUILD_DIR)/CrazyRandomSword.o \
+		$(BUILD_DIR)/UnreliableSling.o 
 
 all: main.out
 
@@ -34,6 +35,9 @@ $(BUILD_DIR)/SimpleAxe.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o SimpleAxe.cpp Simpl
 $(BUILD_DIR)/CrazyRandomSword.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o CrazyRandomSword.cpp CrazyRandomSword.h
 	$(CXX) $(CXXFLAGS) -c -o $@ CrazyRandomSword.cpp
 
+$(BUILD_DIR)/UnreliableSling.o: $(BUILD_DIR) $(BUILD_DIR)/Weapon.o UnreliableSling.cpp UnreliableSling.h
+	$(CXX) $(CXXFLAGS) -c -o $@ UnreliableSling.cpp
+
 $(BUILD_DIR)/Weapon.o: $(BUILD_DIR) Weapon.cpp Weapon.h
 	$(CXX) $(CXXFLAGS) -c -o $@ Weapon.cpp
 
@@ -45,6 +49,7 @@ clean:
 	rm -f $(BUILD_DIR)/CommonSpear.o
 	rm -f $(BUILD_DIR)/SimpleAxe.o
 	rm -f $(BUILD_DIR)/CrazyRandomSword.o
+	rm -f $(BUILD_DIR)/UnreliableSling.o
 
 	rm -rf $(BUILD_DIR)
 
